@@ -6,12 +6,12 @@ https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_
 
 # What is included:
 
-Create organization-wide AI opt-out policies
-Configure account-specific opt-outs
-List all AI opt-out policies
-Get effective policies for specific accounts
-Automatic unique policy name generation
-Detailed error handling and logging
+1. Create organization-wide AI opt-out policies
+2. Configure account-specific opt-outs
+3. List all AI opt-out policies
+4. Get effective policies for specific accounts
+5. Automatic unique policy name generation
+6. Detailed error handling and logging
 
 # Prereq:
 AWS Organizations setup with all features enabled
