@@ -72,3 +72,8 @@ Python 3.8 or later
 7. get_effective_policy: Get effective policies for accounts
    
 9. Error handling - Handles missing env variables, Invalid actions,  API errors, Permission Issues
+
+# Add the following:
+1. Appropriate timeout around 3-4 minutes
+   
+3. Enable AWS Lambda logging
