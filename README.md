@@ -134,8 +134,8 @@ This project is licensed under the MIT License.
                 "@@operators_allowed_for_child_policies": ["@@assign"],
                 "@@role_arn_condition": {
                     "allowed_role_arns": [
-                        "arn:aws:iam::*:role/AIServiceAllowed",
-                        "arn:aws:iam::*:role/DataScientist"
+                        "arn:aws:iam::*:role/AIServiceAdmin",
+                        "arn:aws:iam::*:role/DataAdmin"
                     ]
                 }
             }
@@ -145,7 +145,7 @@ This project is licensed under the MIT License.
                 "@@assign": "optIn",
                 "@@role_arn_condition": {
                     "allowed_role_arns": [
-                        "arn:aws:iam::*:role/DocumentProcessor"
+                        "arn:aws:iam::*:role/securityAnalyst"
                     ]
                 }
             }
