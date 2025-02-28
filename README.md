@@ -82,3 +82,7 @@ Python 3.8 or later
    
 4. Test against non production accounts
 
+# Limitations:
+1. Some AWS services may have specific opt-out requirements
+
+2. Maximum policy size limits apply
