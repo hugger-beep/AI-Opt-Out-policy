@@ -96,6 +96,24 @@ This project is licensed under the MIT License.
 # References:
 1. AWS Organizations Documentation
 
-2. AI Services Opt-out Policies
+## Payload example to create policy:
+{
+    "action": "create",
+    "details": {
+        "account_opt_outs": [
+            {
+                "account_id": "123456789012",
+                "services": ["rekognition", "textract"]
+            },
+            {
+                "account_id": "098765432109",
+                "services": ["default"]
+            }
+        ]
+    }
+}
 
-3. AWS Lambda Documentation
+
+3. AI Services Opt-out Policies
+
+4. AWS Lambda Documentation
