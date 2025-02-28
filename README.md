@@ -17,6 +17,7 @@ IAM permissions for managing AI opt-out policies
 Lambda execution role with appropriate permissions
 Python 3.8 or later
 
+
 # Lambda IAM permission required:
 
 {
@@ -51,3 +52,15 @@ Python 3.8 or later
 		}
 	]
 }
+
+# The Code 
+# Functions Overview:
+## Main Components:
+
+1. get_policy_by_name: Find existing policies
+
+2. generate_unique_policy_name: Create unique policy names
+
+3. update_or_create_policy: Create or update policies
+
+4. create_account_opt_out_policy: Configure account-specific opt-outs
