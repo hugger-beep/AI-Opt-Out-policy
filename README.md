@@ -95,6 +95,10 @@ This project is licensed under the MIT License.
 
 # References:
 1. AWS Organizations Documentation
+   
+2. 3. AI Services Opt-out Policies
+
+3. AWS Lambda Documentation
 
 ## Payload example to create policy:
 {
@@ -114,6 +118,4 @@ This project is licensed under the MIT License.
 }
 
 
-3. AI Services Opt-out Policies
 
-4. AWS Lambda Documentation
