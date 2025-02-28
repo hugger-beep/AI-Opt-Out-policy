@@ -76,4 +76,9 @@ Python 3.8 or later
 # Add the following:
 1. Appropriate timeout around 3-4 minutes
    
-3. Enable AWS Lambda logging
+2. Enable AWS Lambda logging
+   
+3. Use Least privilege permission for your AWS Lambda
+   
+4. Test against non production accounts
+
