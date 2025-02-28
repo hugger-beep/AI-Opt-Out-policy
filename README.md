@@ -88,3 +88,13 @@ Python 3.8 or later
 1. Some AWS services may have specific opt-out requirements - https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_ai-opt-out_all.html
 
 2. Maximum policy size limits apply
+
+## License:
+This project is licensed under the MIT License.
+
+## References:
+1. AWS Organizations Documentation
+
+2. AI Services Opt-out Policies
+
+3. AWS Lambda Documentation
