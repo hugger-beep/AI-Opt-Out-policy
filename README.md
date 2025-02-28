@@ -96,7 +96,7 @@ This project is licensed under the MIT License.
 # References:
 1. AWS Organizations Documentation
    
-2. 3. AI Services Opt-out Policies
+2. AI Services Opt-out Policies
 
 3. AWS Lambda Documentation
 
