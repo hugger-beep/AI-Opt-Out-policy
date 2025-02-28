@@ -118,4 +118,38 @@ This project is licensed under the MIT License.
 }
 
 
+## Below Not tested - Applying to IAM roles sample - Work in progress
+
+{
+    "services": {
+        "default": {
+            "opt_out_policy": {
+                "@@assign": "optOut",
+                "@@operators_allowed_for_child_policies": ["@@none"]
+            }
+        },
+        "rekognition": {
+            "opt_out_policy": {
+                "@@assign": "optIn",
+                "@@operators_allowed_for_child_policies": ["@@assign"],
+                "@@role_arn_condition": {
+                    "allowed_role_arns": [
+                        "arn:aws:iam::*:role/AIServiceAllowed",
+                        "arn:aws:iam::*:role/DataScientist"
+                    ]
+                }
+            }
+        },
+        "textract": {
+            "opt_out_policy": {
+                "@@assign": "optIn",
+                "@@role_arn_condition": {
+                    "allowed_role_arns": [
+                        "arn:aws:iam::*:role/DocumentProcessor"
+                    ]
+                }
+            }
+        }
+    }
+}
 
