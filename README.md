@@ -70,3 +70,5 @@ Python 3.8 or later
 6. list_ai_policies: List all AI opt-out policies
 
 7. get_effective_policy: Get effective policies for accounts
+   
+9. Error handling - Handles missing env variables, Invalid actions,  API errors, Permission Issues
