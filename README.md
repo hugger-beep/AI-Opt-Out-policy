@@ -2,6 +2,8 @@
 
 This Lambda function manages AI services opt-out policies in AWS Organizations, allowing you to control AI service data usage across your organization and specific accounts.
 
+https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_ai-opt-out_all.html
+
 # What is included:
 
 Create organization-wide AI opt-out policies
@@ -83,6 +85,6 @@ Python 3.8 or later
 4. Test against non production accounts
 
 # Limitations:
-1. Some AWS services may have specific opt-out requirements
+1. Some AWS services may have specific opt-out requirements - https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_ai-opt-out_all.html
 
 2. Maximum policy size limits apply
