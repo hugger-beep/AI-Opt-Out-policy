@@ -56,7 +56,7 @@ Python 3.8 or later
 }
 
 # The Code 
-# Functions Overview:
+## Functions Overview:
 ## Main Components:
 
 1. get_policy_by_name: Find existing policies
@@ -75,7 +75,7 @@ Python 3.8 or later
    
 9. Error handling - Handles missing env variables, Invalid actions,  API errors, Permission Issues
 
-# Add the following:
+## Add the following:
 1. Appropriate timeout around 3-4 minutes
    
 2. Enable AWS Lambda logging
@@ -89,10 +89,10 @@ Python 3.8 or later
 
 2. Maximum policy size limits apply
 
-## License:
+# License:
 This project is licensed under the MIT License.
 
-## References:
+# References:
 1. AWS Organizations Documentation
 
 2. AI Services Opt-out Policies
