@@ -89,14 +89,6 @@ Python 3.8 or later
 
 2. Maximum policy size limits apply
 
-# Contributing
-1. Fork the repository
-
-2. Create feature branch
-
-3. Commit changes
-
-4. Create pull request
 
 # License:
 This project is licensed under the MIT License.
