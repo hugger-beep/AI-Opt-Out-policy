@@ -102,11 +102,11 @@ This project is licensed under the MIT License.
     "details": {
         "account_opt_outs": [
             {
-                "account_id": "123456789012",
+                "account_id": "XXXXXXXXXX09",
                 "services": ["rekognition", "textract"]
             },
             {
-                "account_id": "098765432109",
+                "account_id": "XXXXXXXXX087",
                 "services": ["default"]
             }
         ]
