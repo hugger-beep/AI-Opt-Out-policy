@@ -118,38 +118,16 @@ This project is licensed under the MIT License.
 }
 
 
-## Below Not tested - Applying to IAM roles sample - Work in progress
+# Test access to AI services
+aws iam simulate-custom-policy --policy-input-list file://iampolicy.json --action-names rekognition:DetectFaces
 
-{
-    "services": {
-        "default": {
-            "opt_out_policy": {
-                "@@assign": "optOut",
-                "@@operators_allowed_for_child_policies": ["@@none"]
-            }
-        },
-        "rekognition": {
-            "opt_out_policy": {
-                "@@assign": "optIn",
-                "@@operators_allowed_for_child_policies": ["@@assign"],
-                "@@role_arn_condition": {
-                    "allowed_role_arns": [
-                        "arn:aws:iam::*:role/AIServiceAdmin",
-                        "arn:aws:iam::*:role/DataAdmin"
-                    ]
-                }
-            }
-        },
-        "textract": {
-            "opt_out_policy": {
-                "@@assign": "optIn",
-                "@@role_arn_condition": {
-                    "allowed_role_arns": [
-                        "arn:aws:iam::*:role/securityAnalyst"
-                    ]
-                }
-            }
-        }
-    }
-}
+# Check policy syntax
+aws organizations describe-policy --policy-id p-90oi3gooi1 --output json | jq '.Policy.Content' -r
+
+# List all policies affecting an account
+aws organizations list-policies-for-target --target-id 457835469527 --filter AISERVICES_OPT_OUT_POLICY
+
+# Check policy inheritance chain
+aws organizations describe-effective-policy --policy-type AISERVICES_OPT_OUT_POLICY --target-id 457835469527 --output json | jq '.EffectivePolicy'
+
 
